@@ -1,0 +1,111 @@
+/* Basic Reset to remove default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, a, label
+{
+  font-family: Helvetica;
+}
+
+/* Style the navigation container */
+.navbar {
+    background-color: #333; /* Dark background color */
+    overflow: hidden; /* Clear floats */
+}
+
+/* Remove list bullets, margins, and padding from the UL */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox for a horizontal layout */
+    /*justify-content: space-around; !* Distribute items evenly *!*/
+}
+
+/* Style the list items (optional, but useful for spacing) */
+.navbar li {
+    /* You can add specific styling here if needed */
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    display: block; /* Make the whole link area clickable */
+    color: #f2f2f2; /* Light text color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add spacing around the text */
+    text-decoration: none; /* Remove default link underlines */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Lighter background on hover */
+    color: black; /* Darker text on hover */
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2, p {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+#status-panel
+{
+    background-color: #DDDDDD;
+    width: 50%;
+}
+
+#board
+{
+    float: right;
+    background-color: #00ffff;
+    width: 50%;
+    height: 200px;
+}
+
+#card
+{
+    background-color: green;
+}
+
+.grid-container
+{
+    background-color: gray;
+    text-align: center;
+}
