@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, a, label
+p, h1, h2, h3, a, label, ul, li
 {
   font-family: Helvetica;
 }
@@ -24,6 +24,8 @@ p, h1, h2, h3, a, label
     display: flex; /* Use Flexbox for a horizontal layout */
     /*justify-content: space-around; !* Distribute items evenly *!*/
 }
+
+
 
 /* Style the list items (optional, but useful for spacing) */
 .navbar li {
@@ -61,7 +63,7 @@ h2, p {
     margin: 10px;
 }
 
-ul {
+.BdE-navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -69,9 +71,17 @@ ul {
     background-color: #333333;
 }
 
-ul li {
-    float: left;
+.objectives {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
 }
+
+/*ul li {*/
+/*    float: left;*/
+/*}*/
 
 ul li a {
     display: block;
