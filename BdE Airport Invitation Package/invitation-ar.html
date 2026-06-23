@@ -1,0 +1,449 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>BdE Airport Invitation</title>-->
+
+<!--    <style>-->
+<!--        *{-->
+<!--            margin:0;-->
+<!--            padding:0;-->
+<!--            box-sizing:border-box;-->
+<!--        }-->
+
+<!--        body{-->
+<!--            background:linear-gradient(135deg,#0b1d3a,#142f57);-->
+<!--            height:100vh;-->
+<!--            display:flex;-->
+<!--            justify-content:center;-->
+<!--            align-items:center;-->
+<!--            overflow:hidden;-->
+<!--            font-family:Georgia, serif;-->
+<!--        }-->
+
+<!--        .scene{-->
+<!--            position:relative;-->
+<!--        }-->
+
+<!--        .envelope{-->
+<!--            position:relative;-->
+<!--            width:500px;-->
+<!--            height:320px;-->
+<!--        }-->
+
+<!--        .back{-->
+<!--            position:absolute;-->
+<!--            width:100%;-->
+<!--            height:100%;-->
+<!--            background:#f5f1e8;-->
+<!--            border:3px solid #b99537;-->
+<!--            border-radius:10px;-->
+<!--        }-->
+
+<!--        .flap{-->
+<!--            position:absolute;-->
+<!--            top:0;-->
+<!--            left:0;-->
+<!--            width:100%;-->
+<!--            height:170px;-->
+<!--            background:#e7dcc3;-->
+<!--            clip-path:polygon(0 0,100% 0,50% 100%);-->
+<!--            transform-origin:top;-->
+<!--            transition:1.5s ease;-->
+<!--            z-index:4;-->
+<!--        }-->
+
+<!--        .letter{-->
+<!--            position:absolute;-->
+<!--            left:25px;-->
+<!--            bottom:20px;-->
+<!--            width:450px;-->
+<!--            height:260px;-->
+<!--            background:white;-->
+<!--            border:2px solid #b99537;-->
+<!--            border-radius:8px;-->
+<!--            padding:25px;-->
+<!--            transition:1.8s ease;-->
+<!--            z-index:2;-->
+<!--        }-->
+
+<!--        .letter h1{-->
+<!--            color:#12356b;-->
+<!--            text-align:center;-->
+<!--            margin-bottom:15px;-->
+<!--        }-->
+
+<!--        .letter p{-->
+<!--            text-align:center;-->
+<!--            color:#333;-->
+<!--        }-->
+
+<!--        .seal{-->
+<!--            position:absolute;-->
+<!--            top:110px;-->
+<!--            left:50%;-->
+<!--            transform:translateX(-50%);-->
+<!--            width:80px;-->
+<!--            height:80px;-->
+<!--            border-radius:50%;-->
+<!--            background:gold;-->
+<!--            border:4px solid #d4af37;-->
+<!--            color:#12356b;-->
+<!--            font-weight:bold;-->
+<!--            display:flex;-->
+<!--            justify-content:center;-->
+<!--            align-items:center;-->
+<!--            cursor:pointer;-->
+<!--            z-index:5;-->
+<!--            transition:.3s;-->
+<!--        }-->
+
+<!--        .seal:hover{-->
+<!--            transform:translateX(-50%) scale(1.1);-->
+<!--        }-->
+
+<!--        .open .flap{-->
+<!--            transform:rotateX(180deg);-->
+<!--        }-->
+
+<!--        .open .letter{-->
+<!--            transform:translateY(-240px);-->
+<!--        }-->
+
+<!--        .message{-->
+<!--            position:absolute;-->
+<!--            bottom:-70px;-->
+<!--            width:100%;-->
+<!--            text-align:center;-->
+<!--            color:white;-->
+<!--            font-size:18px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<div class="scene">-->
+
+<!--    <div id="envelope" class="envelope">-->
+
+<!--        <div class="back"></div>-->
+
+<!--        <div class="letter">-->
+<!--            <h1>✈ BdE Airport</h1>-->
+<!--            <p>-->
+<!--                Official Grand Opening Invitation<br>-->
+<!--                Level 30 Ceremony-->
+<!--            </p>-->
+<!--        </div>-->
+
+<!--        <div class="flap"></div>-->
+
+<!--        <div class="seal" onclick="openEnvelope()">-->
+<!--            OPEN-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <div class="message">-->
+<!--        Click the seal to open your invitation-->
+<!--    </div>-->
+
+<!--</div>-->
+
+<!--<script>-->
+
+<!--    function openEnvelope(){-->
+
+<!--        const envelope =-->
+<!--            document.getElementById("envelope");-->
+
+<!--        envelope.classList.add("open");-->
+
+<!--        setTimeout(()=>{-->
+<!--            window.location.href =-->
+<!--                "BdE International Airport 30 Invitation.html";-->
+<!--        },3000);-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حفل الافتتاح الكبير - الطابق 30</title>
+    <style>
+        body{
+            font-family: Georgia, serif;
+            background:#f4f1ea;
+            color:#1f2f4a;
+            margin:0;
+            padding:40px;
+        }
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            border:4px solid #b68b2d;
+            padding:40px;
+        }
+        h1,h2{
+            text-align:center;
+            margin:0;
+        }
+        h1{font-size:56px;color:#12356b;}
+        h2{color:#b68b2d;margin-top:10px;}
+        .section{margin-top:25px;line-height:1.6;}
+        .quote{
+            text-align:center;
+            font-style:italic;
+            font-size:1.4em;
+            margin:30px 0;
+        }
+        .footer{
+            text-align:center;
+            margin-top:35px;
+        }
+        ul{line-height:1.8;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>BdE AIRPORT</h1>
+    <h2>حفل الافتتاح الكبير - الطابق 30</h2>
+
+    <div class="section">
+        <p><strong>أعضاء BdE الأعزاء،</strong></p>
+
+        <p>بكل فخر وحماس، ندعوكم للمشاركة في حفل الافتتاح الرسمي لمطار BdE - الطابق 30. </p>
+
+        <p>بعد أشهر من التخطيط الدؤوب، والبناء، والبحث التقني، والمثابرة في مواجهة متطلبات التعليم العالي، يُمثل هذا الإنجاز بداية فصل جديد في عالم الطيران والابتكار والتواصل لـ 1395. يرمز مطار BdE إلى التقدم، والعمل الجماعي، والإمكانيات اللامحدودة لمستقبل السفر والتواصل والتميز.</p>
+
+
+    </div>
+
+    <div class="section">
+        <h3>تفاصيل الفعالية</h3>
+        <ul>
+            <li>الفعالية: حفل الافتتاح الكبير للطابق 30</li>
+            <li>14 يوليو الساعة 9:30 مساءً (هذا يوم توسيع القاعدة)</li>
+            <li>الموقع: مبنى الركاب الرئيسي في مطار BdE</li>
+            <li>المتحدث الرئيسي: USPilot4715</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>أبرز فعاليات البرنامج</h3>
+        <ul>
+            <li>    الرؤية: نظرة مُعمقة على منشأتنا المتطورة وشبكة رحلاتنا العالمية.</li>
+            <li>تقديرًا لجهود الطاقم: نُشيد بالتميز التقني والتفاني الذي أبدته فرق الإنشاء والبحث لدينا.</li>
+            <li>اللحظة الكبرى: قص الشريط الرسمي في حفل الافتتاح.</li>
+            <li>احتفال مهيب: ألعاب نارية، موسيقى، وأولى رحلات الإقلاع الرسمية.</li>
+        </ul>
+    </div>
+
+    <div class="quote">
+        "اليوم ليس مجرد مبنى جديد، بل هو نصب تذكاري للصمود."
+    </div>
+
+    <div class="section">
+        <p>حضوركم شرف عظيم لنا ونحن نحتفل بهذا الإنجاز التاريخي معًا. نتطلع لرؤية جميع أعضاء فريق مطار بودابست الدولي على أرض المطار في هذه المناسبة التي لا تُنسى.</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>إدارة مطار بودابست الدولي
+        </strong><br>
+            <em>نحو معايير جديدة</em></p>
+
+        <p><strong>USPilot4715</strong><br>
+            مؤسس مطار بودابست الدولي وشركة طيران بودابست الدولي
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>BdE Airport Invitation</title>-->
+
+<!--    <style>-->
+<!--        *{-->
+<!--            margin:0;-->
+<!--            padding:0;-->
+<!--            box-sizing:border-box;-->
+<!--        }-->
+
+<!--        body{-->
+<!--            background:linear-gradient(135deg,#0b1d3a,#142f57);-->
+<!--            height:100vh;-->
+<!--            display:flex;-->
+<!--            justify-content:center;-->
+<!--            align-items:center;-->
+<!--            overflow:hidden;-->
+<!--            font-family:Georgia, serif;-->
+<!--        }-->
+
+<!--        .scene{-->
+<!--            position:relative;-->
+<!--        }-->
+
+<!--        .envelope{-->
+<!--            position:relative;-->
+<!--            width:500px;-->
+<!--            height:320px;-->
+<!--        }-->
+
+<!--        .back{-->
+<!--            position:absolute;-->
+<!--            width:100%;-->
+<!--            height:100%;-->
+<!--            background:#f5f1e8;-->
+<!--            border:3px solid #b99537;-->
+<!--            border-radius:10px;-->
+<!--        }-->
+
+<!--        .flap{-->
+<!--            position:absolute;-->
+<!--            top:0;-->
+<!--            left:0;-->
+<!--            width:100%;-->
+<!--            height:170px;-->
+<!--            background:#e7dcc3;-->
+<!--            clip-path:polygon(0 0,100% 0,50% 100%);-->
+<!--            transform-origin:top;-->
+<!--            transition:1.5s ease;-->
+<!--            z-index:4;-->
+<!--        }-->
+
+<!--        .letter{-->
+<!--            position:absolute;-->
+<!--            left:25px;-->
+<!--            bottom:20px;-->
+<!--            width:450px;-->
+<!--            height:260px;-->
+<!--            background:white;-->
+<!--            border:2px solid #b99537;-->
+<!--            border-radius:8px;-->
+<!--            padding:25px;-->
+<!--            transition:1.8s ease;-->
+<!--            z-index:2;-->
+<!--        }-->
+
+<!--        .letter h1{-->
+<!--            color:#12356b;-->
+<!--            text-align:center;-->
+<!--            margin-bottom:15px;-->
+<!--        }-->
+
+<!--        .letter p{-->
+<!--            text-align:center;-->
+<!--            color:#333;-->
+<!--        }-->
+
+<!--        .seal{-->
+<!--            position:absolute;-->
+<!--            top:110px;-->
+<!--            left:50%;-->
+<!--            transform:translateX(-50%);-->
+<!--            width:80px;-->
+<!--            height:80px;-->
+<!--            border-radius:50%;-->
+<!--            background:gold;-->
+<!--            border:4px solid #d4af37;-->
+<!--            color:#12356b;-->
+<!--            font-weight:bold;-->
+<!--            display:flex;-->
+<!--            justify-content:center;-->
+<!--            align-items:center;-->
+<!--            cursor:pointer;-->
+<!--            z-index:5;-->
+<!--            transition:.3s;-->
+<!--        }-->
+
+<!--        .seal:hover{-->
+<!--            transform:translateX(-50%) scale(1.1);-->
+<!--        }-->
+
+<!--        .open .flap{-->
+<!--            transform:rotateX(180deg);-->
+<!--        }-->
+
+<!--        .open .letter{-->
+<!--            transform:translateY(-240px);-->
+<!--        }-->
+
+<!--        .message{-->
+<!--            position:absolute;-->
+<!--            bottom:-70px;-->
+<!--            width:100%;-->
+<!--            text-align:center;-->
+<!--            color:white;-->
+<!--            font-size:18px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<div class="scene">-->
+
+<!--    <div id="envelope" class="envelope">-->
+
+<!--        <div class="back"></div>-->
+
+<!--        <div class="letter">-->
+<!--            <h1>✈ BdE Airport</h1>-->
+<!--            <p>-->
+<!--                Official Grand Opening Invitation<br>-->
+<!--                Level 30 Ceremony-->
+<!--            </p>-->
+<!--        </div>-->
+
+<!--        <div class="flap"></div>-->
+
+<!--        <div class="seal" onclick="openEnvelope()">-->
+<!--            OPEN-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <div class="message">-->
+<!--        Click the seal to open your invitation-->
+<!--    </div>-->
+
+<!--</div>-->
+
+<!--<script>-->
+
+<!--    function openEnvelope(){-->
+
+<!--        const envelope =-->
+<!--            document.getElementById("envelope");-->
+
+<!--        envelope.classList.add("open");-->
+
+<!--        setTimeout(()=>{-->
+<!--            window.location.href =-->
+<!--                "BdE International Airport 30 Invitation.html";-->
+<!--        },3000);-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

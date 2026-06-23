@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BdE Airport Invitation</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:linear-gradient(135deg,#0b1d3a,#142f57);
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      overflow:hidden;
+      font-family:Georgia, serif;
+    }
+
+    .scene{
+      position:relative;
+    }
+
+    .envelope{
+      position:relative;
+      width:500px;
+      height:320px;
+    }
+
+    .back{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:#f5f1e8;
+      border:3px solid #b99537;
+      border-radius:10px;
+    }
+
+    .flap{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:170px;
+      background:#e7dcc3;
+      clip-path:polygon(0 0,100% 0,50% 100%);
+      transform-origin:top;
+      transition:1.5s ease;
+      z-index:4;
+    }
+
+    .letter{
+      position:absolute;
+      left:25px;
+      bottom:20px;
+      width:450px;
+      height:260px;
+      background:white;
+      border:2px solid #b99537;
+      border-radius:8px;
+      padding:25px;
+      transition:1.8s ease;
+      z-index:2;
+    }
+
+    .letter h1{
+      color:#12356b;
+      text-align:center;
+      margin-bottom:15px;
+    }
+
+    .letter p{
+      text-align:center;
+      color:#333;
+    }
+
+    .seal{
+      position:absolute;
+      top:110px;
+      left:50%;
+      transform:translateX(-50%);
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:gold;
+      border:4px solid #d4af37;
+      color:#12356b;
+      font-weight:bold;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      cursor:pointer;
+      z-index:5;
+      transition:.3s;
+    }
+
+    .seal:hover{
+      transform:translateX(-50%) scale(1.1);
+    }
+
+    .open .flap{
+      transform:rotateX(180deg);
+    }
+
+    .open .letter{
+      transform:translateY(-240px);
+    }
+
+    .message{
+      position:absolute;
+      bottom:-70px;
+      width:100%;
+      text-align:center;
+      color:white;
+      font-size:18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="scene">
+
+  <div id="envelope" class="envelope">
+
+    <div class="back"></div>
+
+    <div class="letter">
+      <h1>✈ BdE Airport</h1>
+      <p>
+        Official Grand Opening Invitation<br>
+        Level 30 Ceremony
+      </p>
+    </div>
+
+    <div class="flap"></div>
+
+    <div class="seal" onclick="openEnvelope()">
+      OPEN
+    </div>
+
+  </div>
+
+  <div class="message">
+    Click the seal to open your invitation
+  </div>
+
+</div>
+
+<script>
+  localStorage.getItem("bdeLanguage");
+
+  function openEnvelope() {
+
+    const envelope = document.getElementById("envelope");
+    envelope.classList.add("open");
+
+    const lang = localStorage
+            .getItem("bdeLanguage")
+            ?.trim()
+            .toLowerCase();
+
+    console.log("Language selected:", lang);
+
+    setTimeout(() => {
+
+      const pages = {
+        en: "invitation-en.html",
+        fr: "invitation-fr.html",
+        pt: "invitation-pt.html",
+        es: "invitation-es.html",
+        ko: "invitation-ko.html",
+        id: "invitation-id.html",
+        ar: "invitation-ar.html"
+      };
+
+      const destination =
+              pages[lang] || "invitation-en.html";
+
+      console.log("Redirecting to:", destination);
+
+      window.location.href = destination;
+
+    }, 3000);
+  }
+
+</script>
+
+<p id="testLanguage"></p>
+
+<script>
+
+  document.getElementById("testLanguage")
+          .innerText =
+          "Language: " +
+          localStorage.getItem("bdeLanguage");
+
+</script>
+
+</body>
+</html>

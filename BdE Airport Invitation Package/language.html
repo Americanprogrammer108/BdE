@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BdE Airport - Select Language</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:linear-gradient(
+                    135deg,
+                    #0b1d3a,
+                    #142f57
+            );
+            color:white;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            text-align:center;
+            max-width:1000px;
+            width:90%;
+        }
+
+        .logo{
+            font-size:4rem;
+            margin-bottom:15px;
+        }
+
+        h1{
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            margin-bottom:40px;
+            color:#d9d9d9;
+        }
+
+        .languages{
+            display:grid;
+            grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .language-card{
+            background:rgba(255,255,255,0.08);
+            border:2px solid gold;
+            border-radius:15px;
+            padding:25px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .language-card:hover{
+            transform:translateY(-5px);
+            background:rgba(255,255,255,0.15);
+        }
+
+        .flag{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .language-name{
+            font-size:1.3rem;
+            font-weight:bold;
+        }
+
+        .native-name{
+            margin-top:5px;
+            color:#d9d9d9;
+        }
+
+        .footer{
+            margin-top:40px;
+            font-size:0.9rem;
+            color:#bfbfbf;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">✈️</div>
+
+    <h1>BdE Airport</h1>
+
+    <div class="subtitle">
+        Official Grand Opening Invitation<br>
+        Please Select Your Language
+    </div>
+
+    <div class="languages">
+
+        <div class="language-card"
+             onclick="selectLanguage('en')">
+            <div class="flag">🇺🇸</div>
+            <div class="language-name">English</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('fr')">
+            <div class="flag">🇫🇷</div>
+            <div class="language-name">French</div>
+            <div class="native-name">Français</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('pt')">
+            <div class="flag">🇵🇹</div>
+            <div class="language-name">Portuguese</div>
+            <div class="native-name">Português</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('es')">
+            <div class="flag">🇪🇸</div>
+            <div class="language-name">Spanish</div>
+            <div class="native-name">Español</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('ko')">
+            <div class="flag">🇰🇷</div>
+            <div class="language-name">Korean</div>
+            <div class="native-name">한국어</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('id')">
+            <div class="flag">🇮🇩</div>
+            <div class="language-name">Indonesian</div>
+            <div class="native-name">Bahasa Indonesia</div>
+        </div>
+
+        <div class="language-card"
+             onclick="selectLanguage('ar')">
+            <div class="flag">🇸🇦</div>
+            <div class="language-name">Arabic</div>
+            <div class="native-name">العربية</div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        BdE Airport Administration<br>
+        Founder: USPilot4715
+    </div>
+
+</div>
+
+<script>
+
+    function selectLanguage(lang){
+
+        localStorage.setItem(
+            "bdeLanguage",
+            lang
+        );
+
+        window.location.href =
+            "index.html";
+    }
+
+</script>
+
+</body>
+</html>
